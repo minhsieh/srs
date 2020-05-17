@@ -11,6 +11,12 @@ SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable 
 > Remark: Although SRS is licenced under [MIT][LICENSE], but there are some depended libraries which are distributed using their own licenses, please read [License Mixing][LicenseMixing].
 
 <a name="product"></a>
+
+
+## What `minhsieh` modified?
+- 把http_hook在on_connect的callback，多加上 `stream`, `params` 這兩的資訊在request payload內，才能做到在 connect 那層去驗證請求是否合法
+
+
 ## Usage
 
 **>>> Step 1:** Get SRS.
